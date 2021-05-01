@@ -1,0 +1,27 @@
+conecting:
+ssh root@143.248.151.14 -p 9008
+pass: ritdata
+
+connecting jupyter:
+https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/
+ssh -N -f -L localhost:YYYY:localhost:XXXX root@143.248.151.14 -p 9008
+XXXX: port at remote
+then type in local http://localhost:YYYY/ 
+
+SENDING STUFF:
+link: https://www.golinuxcloud.com/ssh-copy-folder-local-to-remote-server-linux/
+
+remote to local:
+To scp from remote to local server, below is the content on my remote host (server2) under /home/temp/deepak which I wish to copy on my localhost (server1) under /tmp/deepak
+command: [root@server1 ~]# scp -r root@server2:/home/temp/deepak /tmp/
+my command: scp -P 9008 -r root@143.248.151.14:/root/myvenv.yml /home/trojan/Desktop/
+
+
+local to remote:
+scp -r <path to dir on localhost> user@<host>:<path on remote host>/
+my command: scp -P 9008 -r /home/trojan/Desktop/dimentia/dataset/data_3categ/data with PGGAN/ root@143.248.151.14:/root/dataset/haseeb_data/dataset/
+
+https://medium.com/dev-blogs/transferring-files-between-remote-server-and-local-system-133d78d58137
+
+notebook: jupyter notebook --allow-root --no-browser --port=8889 --ip=127.0.0.1 
+
