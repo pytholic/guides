@@ -17,6 +17,7 @@ git pull origin main --allow-unrelated-histories
 git --config --gloabal --list
 git remote add origin <url>
 git remote -v
+git remote set-url origin https://github.com/your/repository
 
 PULLING:
 git status (check changes)
@@ -40,4 +41,11 @@ git push origin main
 git push origin HEAD:<remote branch>
 
 git show-ref
+
+
+git add <folder contents path> e.g ./save_models/*
+git commit -m "first commit"
+git branch
+git push origin main
+
 
