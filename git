@@ -1,0 +1,43 @@
+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 
+
+
+git init 
+git remote -v
+touch test.txt
+git add './test.txt'
+git commit -m "first commit"
+git branch
+git pull origin main
+
+git add *
+git stash
+git pull origin main --allow-unrelated-histories
+
+
+git --config --gloabal --list
+git remote add origin <url>
+git remote -v
+
+PULLING:
+git status (check changes)
+git add .
+git commit -m "first commit"
+git pull origin main
+
+
+git clone or git pull origin main
+
+IF NOT UPDATING WITH PULL:
+git fetch --all
+git reset --hard origin/main
+
+PUSHING:
+changes
+git add ., git add -A
+git commit -m <message>
+git push origin master 
+git push origin main
+git push origin HEAD:<remote branch>
+
+git show-ref
+
