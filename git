@@ -1,5 +1,5 @@
 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 
-
+rename master to main:$ git branch -m master main
 
 git init 
 git remote -v
