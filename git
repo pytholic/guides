@@ -1,51 +1,127 @@
 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 
 rename master to main:$ git branch -m master main
 
-git init 
-git remote -v
-touch test.txt
-git add './test.txt'
-git commit -m "first commit"
-git branch
-git pull origin main
+rename master to main:$ git branch -m master main
 
-git add *
-git stash
-git pull origin main --allow-unrelated-histories
+SETUP:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+git config --global credential.helper store
 
 
-git --config --gloabal --list
-git remote add origin <url>
-git remote -v
-git remote set-url origin https://github.com/your/repository
+git remote add <remote name> <url>
+git remote set-url origin <url>
 
-PULLING:
-git status (check changes)
+TRY:
+git push
+OR:
+git push -u <remote name> <local name>
+OR:
+git push -f <remote name> <local name> (if pushing firsttime, or remote contains work that you don't)
+
+
+
+git init
+
+git status
+
 git add .
-git commit -m "first commit"
-git pull origin main
+
+git status
+
+git commit -m 'Initial index commit'
+
+git status
 
 
-git clone or git pull origin main
 
-IF NOT UPDATING WITH PULL:
-git fetch --all
-git reset --hard origin/main
 
-PUSHING:
+
+PUSH PULL:
+SET ORIGIN
+
+git remote add origin <URL> or git remote set-url <url>
+
+git remote -v
+
+SET BRANCH MASTER
+
+git push --set-upstream-to=origin/master
+
+git pull --allow-unrelated-histories (need to sync first)
+
+:q (to quit vim)
+   	 
+git push
+   	 
+   	 
+   	 
+   	 
+   	 
+OTHER BRANCH
+   	 
+git branch <branch name>
+   	 
+git branch --list
+   	 
+git checkout <branch name> (to change branch)
+    
+or git checkout -b <branch name>
+   	 
+touch style.css (create file)
+   	 
+git status
+   	 
+git add .
+   	 
+git commit -m '...'
+   	 
+git push --set-upstream origin <branch name>
+   	 
+    
+    
+    
+   	 
+FETCH BRANCHES
+
+git fetch origin or git fetch origin <branch:branch>    
+   			 
+   	 
+    
+SUBMODULES
+
+git submodule add    
+
+rm -rf projectfolder
+git rm -r projectfolder
+
+https://stackoverflow.com/questions/12898278/issue-with-adding-common-code-as-git-submodule-already-exists-in-the-index/14815959
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+cloning:
+git submodule init
+git submodule update
+or
+git clone --recurse-submodules <url>
+    
+    
+    
+GITIGNORE
+git rm -rf --cached .
+git add .
+https://stackoverflow.com/questions/25436312/gitignore-not-working
+   	 
+   	 
+Steps for me:
+git clone
+cd
+git init
 changes
-git add ., git add -A
-git commit -m <message>
-git push origin master 
-git push origin main
-git push origin HEAD:<remote branch>
+git add .
+git commit -m '...'
+git remote set-url origin <url>
+git push
 
-git show-ref
-
-
-git add <folder contents path> e.g ./save_models/*
-git commit -m "first commit"
-git branch
-git push origin main
-
-
+REMOTE REPO:
+git remote add <remote name> <url>
+git push -u <remote name> <local name>
