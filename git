@@ -125,3 +125,16 @@ git push
 REMOTE REPO:
 git remote add <remote name> <url>
 git push -u <remote name> <local name>
+
+
+######################################
+When direct pushing without cloning
+
+fatal: The current branch master has no upstream branch
+git push origin main
+
+remote contain work....
+git pull origin main
+git push origin main
+
+git push origin main --allow-unrelated-histories
