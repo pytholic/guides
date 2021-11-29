@@ -3,6 +3,14 @@ rename master to main:$ git branch -m master main
 
 rename master to main:$ git branch -m master main
 
+CHECK REMOTE:
+git remote -v
+
+ADD ORIGIN:
+git remote add origib <url>
+git remote set-url origin <url>
+
+
 SETUP:
 git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
