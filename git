@@ -146,3 +146,6 @@ git pull origin main
 git push origin main
 
 git push origin main --allow-unrelated-histories
+
+#################################################################3
+git pull origin main -> Merge fails -> git status -> git add . -> git commit
