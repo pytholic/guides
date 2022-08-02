@@ -34,7 +34,7 @@ Last login: Tue Aug  2 11:23:59 2022 from 10.160.51.34
 
 # Exiting connection
 
-Use `logout` command.
+Use `logout` or `exit` command.
 
 ```
 pytholic@zeno:~$ logout
