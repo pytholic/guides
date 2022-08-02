@@ -100,6 +100,8 @@ Remote to Local
 scp remote_username@10.10.0.2:/remote/file.txt /local/directory
 ```
 
+for a directory, use `-r` flag after scp.
+
 # Install Anaconda and Jupyter
 
 1. Steps to install anaconda
