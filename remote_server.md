@@ -41,6 +41,8 @@ pytholic@zeno:~$ logout
 Connection to 10.160.51.36 closed.
 ```
 
+In VS Code, use File → Close remote connection to completely close the connection.
+
 # Saving password
 
 Use `ssh-keygen`. Reference [link](https://www.notion.so/Remote-Server-3ba3462c2e554194a2a8e62a6719817b).
