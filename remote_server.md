@@ -88,13 +88,13 @@ Then use **File → Open Folder** to open any folder.
 
 # File Transfer
 
-Local to Remote
+Local to Remote (from local shell)
 
 ```
 scp file.txt remote_username@10.10.0.2:/remote/directory
 ```
 
-Remote to Local
+Remote to Local (from remote shell)
 
 ```
 scp remote_username@10.10.0.2:/remote/file.txt /local/directory
