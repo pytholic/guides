@@ -129,3 +129,9 @@ jupyter notebook --allow-root --no-browser --port=8889
 Then open the address in browser and enter token number.
 
 Alternatively, use notebook in vs code.
+
+# Images/Videos
+
+Connect to your server using X11 forwarding: ssh -Y user@server or ssh -X user@server
+
+Then you can use opencv to display, but it is really slow.
